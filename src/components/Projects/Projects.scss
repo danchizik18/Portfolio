@@ -14,51 +14,85 @@
 }
 
 .projects-container {
-  animation: projectCardSlideIn 2.5s ease-out; /* Increase duration to 1.5s */
-}
-
-.projects-container {
   display: flex;
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
   padding: 40px 0;
-  animation: projectCardSlideIn 0.6s ease-out; /* Apply the slide-in effect */
+  animation: projectCardSlideIn 2.5s ease-out;
 
   .project-card {
-    background: #1a1a1a;
-    color: #fff;
-    border-radius: 10px;
     width: 270px; /* Reduced width */
     height: 380px; /* Reduced height */
     padding: 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-    transition: transform 0.3s ease;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px; /* Required for 3D effect */
+    margin: 10px;
     opacity: 0;
     animation: projectCardSlideIn 0.6s ease-out forwards; /* Add animation to each card */
-
-    &:hover {
-      transform: translateY(-5px);
+    
+    &:hover .card-inner {
+      transform: rotateY(180deg); /* Flip the card on hover */
     }
 
-    h3 {
-      margin-top: 10px;
-      font-size: 18px;
+    .card-inner {
+      position: relative;
+      width: 100%;
+      height: 100%;
+      transform-style: preserve-3d;
+      transition: transform 0.6s ease;
     }
 
-    p {
-      font-size: 14px;
+    .card-front, .card-back {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      backface-visibility: hidden; /* Prevent showing the back while flipped */
     }
 
-    img {
+    .card-front {
+      background: #1a1a1a;
+      color: #fff;
+      border-radius: 10px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      padding: 20px;
+    }
+
+    .card-front img {
       max-width: 100%;
       max-height: 150px;
       object-fit: contain;
       margin-bottom: 10px;
+    }
+
+    .card-front h3 {
+      margin-top: 10px;
+      font-size: 18px;
+    }
+
+    .card-front p {
+      font-size: 14px;
+    }
+
+    .card-back {
+      background-color: #f5f5f5;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transform: rotateY(180deg); /* Initially rotated so it's hidden */
+      padding: 10px;
+    }
+
+    .card-back img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: cover;
     }
 
     .github-link {
@@ -71,6 +105,10 @@
       &:hover {
         color: #00b0ff;
       }
+    }
+
+    &:hover {
+      transform: translateY(-5px);
     }
   }
 

@@ -16,7 +16,7 @@ const Experience = () => {
           <h3>Software Engineer Intern @ Nidus Technologies (August 2024 - December 2024)</h3>
           <ul>
             <li>Developed a full-stack web application featuring an AI chatbot, booking system, client database, search functionality, and user authentication</li>
-            <li>Technologies: React, Google Firebase, LLM integration, AWS, SQL</li>
+            <li>Technologies: React, Google Firebase, LLM integration, MongoDB, AWS, SQL</li>
           </ul>
         </div>
       </div>
@@ -29,7 +29,7 @@ const Experience = () => {
           <h3>Natural Language Processing Researcher (Jan 2025 - Present)</h3>
           <ul>
             <li>Conducting NLP analysis on 1,500 legal cases related to Section 230 to extract claims, judicial opinions, and patterns</li>
-            <li>Technologies: pandas, spaCy, LLM models</li>
+            <li>Technologies: pandas, spaCy, DocETL</li>
             <li>Building pipelines to generate insights on platform liability, free speech, and internet regulation</li>
           </ul>
         </div>
