@@ -1,0 +1,118 @@
+@keyframes experienceFadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(30px) scale(0.9); /* Start with a small offset and scale down */
+  }
+  50% {
+    opacity: 0.5;
+    transform: translateY(15px) scale(1.05); /* Scale up slightly */
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0) scale(1); /* End at normal position with full opacity */
+  }
+}
+
+.experience-section {
+  margin: 40px auto;
+  padding: 20px;
+  max-width: 900px;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  font-family: 'Arial', sans-serif;
+
+  /* Apply dramatic fade-in and scale animation */
+  animation: experienceFadeIn 1.5s ease-out;
+
+  &:hover {
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  }
+
+  h2 {
+    font-size: 28px;
+    color: #4d4d4e;
+    margin-bottom: 20px;
+    font-weight: 600;
+    text-align: center;
+  }
+
+  .experience-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+
+    &:hover {
+      background-color: #f9f9f9;
+      transform: translateY(-4px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    }
+
+    .icon-container {
+      flex-shrink: 0;
+      margin-right: 15px;
+    }
+
+    .text-container {
+      h3 {
+        font-size: 20px;
+        color: #4d4d4e;
+        margin-bottom: 12px;
+        font-weight: 500;
+      }
+
+      ul {
+        list-style-type: none;
+        padding: 0;
+
+        li {
+          font-size: 14px;
+          color: #666;
+          margin-bottom: 6px;
+          line-height: 1.6;
+
+          &:before {
+            content: '• ';
+            color: #ffd700;
+            font-weight: bold;
+          }
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .experience-section {
+      max-width: 100%;
+      padding: 10px;
+    }
+
+    .experience-item {
+      flex-direction: column;
+      padding: 15px;
+      align-items: flex-start;
+
+      .icon-container {
+        margin-bottom: 10px;
+      }
+
+      .text-container {
+        h3 {
+          font-size: 18px;
+        }
+
+        ul {
+          font-size: 13px;
+        }
+      }
+    }
+  }
+}

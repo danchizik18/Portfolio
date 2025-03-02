@@ -1,20 +1,19 @@
 import { useEffect, useRef, useState } from 'react';
-import ProfilePic from '../../../assets/images/headshot_arms_crossed-removebg-preview.png';  // Import the profile pic
+import ProfilePic from '../../../assets/images/headshot_arms_crossed-removebg-preview.png';  
 import './Logo.scss';
 
 const Logo = () => {
-  const [isLoaded, setIsLoaded] = useState(false);  // Track loading state
+  const [isLoaded, setIsLoaded] = useState(false); 
   const bgRef = useRef();
   const outlineLogoRef = useRef();
   const profilePicRef = useRef();
 
-  // Effect to trigger animations when the component mounts
   useEffect(() => {
-    console.log('Logo component mounted');  // Log when the component is mounted
+    console.log('Logo component mounted');  
     setTimeout(() => {
       console.log('Setting isLoaded to true');
-      setIsLoaded(true);  // Simulate a delay for animation
-    }, 2000);  // Adjust this delay to simulate loading time
+      setIsLoaded(true);  
+    }, 2000); 
   }, []);
 
   useEffect(() => {
@@ -27,12 +26,12 @@ const Logo = () => {
     <div className="logo-container" ref={bgRef}>
       {/* Check if the image is loaded */}
       <img
-        className={`profile-pic ${isLoaded ? 'fadeIn' : ''}`}  // Apply fade-in class when loaded
-        ref={profilePicRef}  // Attach the ref to the profile pic
+        className={`profile-pic ${isLoaded ? 'fadeIn' : ''}`}  
+        ref={profilePicRef} 
         src={ProfilePic}
         alt="Profile"
-        onLoad={() => console.log('Image Loaded')}  // Add onLoad to log when the image is loaded
-        onError={(error) => console.log('Image Load Error', error)}  // Log any errors
+        onLoad={() => console.log('Image Loaded')}  
+        onError={(error) => console.log('Image Load Error', error)}  
       />
 
       <svg

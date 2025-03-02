@@ -95,6 +95,11 @@
         content: 'PROJECTS';
       }
     }
+    a.experience-link {
+      &:after {
+        content: 'EXPERIENCE';
+      }
+    }
 
     a.active {
       svg {

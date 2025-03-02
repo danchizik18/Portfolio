@@ -4,6 +4,7 @@ import About from './components/About/About';
 import Contact from './components/Contact/Contact'
 import Layout from './components/Layout/Layout';
 import Projects from './components/Projects/Projects'
+import Experience from './components/Experience/Experience'
 // import Dashboard from './components/Dashboard'
 import './App.scss'
 
@@ -16,6 +17,7 @@ function App() {
           <Route path="about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/projects" element={<Projects />} />
+          <Route path="/experience" element={<Experience />} />
           {/* 
           
           <Route path="/dashboard" element={<Dashboard />} /> */}
