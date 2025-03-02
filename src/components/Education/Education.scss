@@ -1,0 +1,140 @@
+.education-section {
+  margin: 20px;
+  padding: 40px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  color: #333;
+  font-family: 'Roboto', sans-serif;
+  position: relative;
+  overflow: hidden;
+
+
+  .oski-container {
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .oski {
+    width: 120px; 
+    height: auto;
+    object-fit: contain;
+
+  }
+
+  h2 {
+    font-size: 28px; 
+    text-align: center;
+    color: #005c8e; 
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+
+  .education-history, .clubs {
+    background-color: #f4c542; 
+    padding: 15px; 
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    opacity: 0;
+    animation: fadeInUp 1s forwards;
+  }
+
+  .education-history h3, .clubs h3 {
+    font-size: 15px; 
+    color: #003e6b; 
+    margin-bottom: 20px;
+    font-weight: bold;
+  }
+
+  .education-history p {
+    font-size: 16px;
+    color: #333;
+  }
+
+
+  .clubs {
+    .club-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+      justify-content: center;
+      margin-top: 10px; 
+    }
+
+    .club-item {
+      background-color: #fff;
+      padding: 10px;
+      border-radius: 10px;
+      text-align: center;
+      width: 180px; 
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      &:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+      }
+
+      .club-logo {
+        width: 180px; 
+        height: 100px;
+        margin-bottom: 10px;
+        object-fit: contain;
+      }
+
+      p {
+        font-size: 14px; 
+        color: #555;
+      }
+    }
+  }
+}
+
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeIn 1.5s ease-out;
+}
+
+@media screen and (max-width: 1200px) {
+  .club-item {
+    width: 150px; 
+  }
+
+  h2 {
+    font-size: 24px;
+  }
+
+  .education-history h3 {
+    font-size: 22px;
+  }
+
+  .clubs h3 {
+    font-size: 22px;
+  }
+
+  .club-logo {
+    width: 60px;
+    height: 60px;
+  }
+}

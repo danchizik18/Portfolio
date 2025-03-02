@@ -1,8 +1,7 @@
 import React from 'react';
-import { FaGithub } from 'react-icons/fa';  // Import GitHub icon
+import { FaGithub } from 'react-icons/fa'; 
 import './Projects.scss';
 
-// Import images from the assets/images folder
 import sfusdImage from '../../assets/images/projects/sfusd.png';
 import pokerImage from '../../assets/images/projects/poker.png';
 import nbaImage from '../../assets/images/projects/nba.png';

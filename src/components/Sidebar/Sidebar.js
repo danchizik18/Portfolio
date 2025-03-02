@@ -15,6 +15,7 @@ import {
   faBars,
   faClose,
   faLaptopCode,
+  faGraduationCap
 } from '@fortawesome/free-solid-svg-icons'
 import { NavLink } from 'react-router-dom';
 
@@ -30,6 +31,9 @@ const Sidebar = () => {
         <NavLink activeclassname="active" className="about-link" to="/about" onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
+        <NavLink activeclassname="active" className="education-link" to="/education" onClick={() => setShowNav(false)}>
+          <FontAwesomeIcon icon={faGraduationCap} color="#4d4d4e" />
+        </NavLink>
         <NavLink activeclassname="active" className="projects-link" to="/projects" onClick={() => setShowNav(false)}>
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
@@ -44,7 +48,7 @@ const Sidebar = () => {
 
       <ul>
         <li>
-          <a href="https://www.linkedin.com/in/slobodan-gaji%C4%87-006bb8b8/" target="_blank" rel="noreferrer">
+          <a href="https://www.linkedin.com/in/dan-chizik-169a44303/" target="_blank" rel="noreferrer">
             <FontAwesomeIcon icon={faLinkedin} color="#4d4d4e" className="anchor-icon" />
           </a>
         </li>
