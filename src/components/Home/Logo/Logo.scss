@@ -1,0 +1,23 @@
+.logo-container {
+  z-index: 0;
+  width: 500px;  // Adjusted width for the image container
+  height: auto;  // Let the height adjust automatically based on the image aspect ratio
+  opacity: 1;
+  position: absolute;
+  top: 10%;
+  right: 15%;
+  bottom: 0;
+  left: auto;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+img.profile-pic {
+  width: 140%;   
+  height: auto;  
+  object-fit: cover; 
+  border-radius: 100px;  
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);  
+}

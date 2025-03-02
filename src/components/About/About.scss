@@ -1,0 +1,149 @@
+.container.about-page {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 40px;
+  gap: 50px;
+  width: 100%;
+  height: 100vh;
+  box-sizing: border-box;
+  margin-left: 0; /* Remove any left margin */
+}
+
+.text-zone {
+  flex: 1;
+  width: 50vw; /* Increased the width of the text zone */
+  max-width: unset;
+  margin-right: 5px;
+}
+
+.profile {
+  flex: 1;
+  width: 20vw;
+  height: auto;
+  margin-left: 20px; /* Reduced margin to move it closer */
+  display: flex;
+}
+
+.profile-img {
+  width: 200px;
+  height: 180px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.skills-section,
+.interests-section {
+  flex: 1;
+  width: 22vw; /* Increased width */
+  max-width: 28vw; /* Further increased max-width for better spacing */
+  position: relative;
+  z-index: 10;
+}
+
+.skills-section {
+  height: auto;
+  max-height: 70vh;
+  overflow-y: auto;
+  margin-left: 10px;
+}
+
+.skills-category h3 {
+  font-size: 1.8rem;
+  margin-bottom: 15px;
+  color: #1a73e8;
+}
+
+.skills-section ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: space-between;
+}
+
+.skills-section li {
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  color: #555;
+  flex-basis: 45%;
+  box-sizing: border-box;
+}
+
+.skills-section li .fa {
+  font-size: 1.5rem;
+}
+
+.skills-section li {
+  padding: 8px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.skills-section li:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.interests-section {
+  position: absolute;
+  bottom: 5%;
+  right: 5%;
+  width: 25vw;
+  z-index: 5;
+}
+
+.interests-section h2 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+  color: #1a73e8;
+  font-weight: bold;
+}
+
+.interests-section ul {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+}
+
+.interests-section li {
+  font-size: 1.2rem;
+}
+
+@media screen and (max-width: 1200px) {
+  .container.about-page {
+    flex-direction: column;
+    align-items: center;
+  }
+  .text-zone,
+  .skills-section,
+  .interests-section {
+    width: 90%;
+    max-width: none;
+  }
+  .profile {
+    margin-top: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .skills-section li {
+    flex-basis: 45%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .skills-section li {
+    flex-basis: 100%;
+  }
+}

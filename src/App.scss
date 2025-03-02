@@ -1,0 +1,52 @@
+@import 'animate.css';
+@import '~loaders.css/src/animations/pacman.scss';
+
+$primary-color: #ffd700;
+
+body {
+  font-family: 'Arial', sans-serif;
+  color: #444;
+  background-color: #2C3E50;
+}
+
+.loader-hidden {
+  display: none;
+}
+
+.loader-active {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  width: 50px;
+  height: 50px;
+  animation: fadeOut 1s 1s forwards;
+}
+
+.text-animate {
+  animation: animateText 1s forwards;
+}
+
+.text-animate-hover {
+  animation: hoverText 1s forwards;
+}
+
+@keyframes animateText {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes hoverText {
+  0% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
