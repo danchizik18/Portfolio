@@ -1,20 +1,19 @@
 import { useEffect, useState, useRef } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faJava, faPython, faJsSquare, faReact, faGitAlt , faChartLine} from '@fortawesome/free-brands-svg-icons';
+import { faJava, faPython, faJsSquare, faReact, faGitAlt } from '@fortawesome/free-brands-svg-icons';
 import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
 import ProfileImage from '../../assets/images/canoeing.jpg';
 import './About.scss';
 
 const About = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
-  const timeoutRef = useRef(null);  // Create a ref for the timeout
+  const timeoutRef = useRef(null);  
 
   useEffect(() => {
     timeoutRef.current = setTimeout(() => {
       setLetterClass('text-animate-hover');
     }, 3000);
 
-    // Clean up the timeout on component unmount
     return () => clearTimeout(timeoutRef.current);
   }, []);
 
