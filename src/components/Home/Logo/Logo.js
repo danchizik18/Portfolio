@@ -10,16 +10,29 @@ const Logo = () => {
 
   // Effect to trigger animations when the component mounts
   useEffect(() => {
-    setTimeout(() => setIsLoaded(true), 2000);  // Simulate a delay for animation
+    console.log('Logo component mounted');  // Log when the component is mounted
+    setTimeout(() => {
+      console.log('Setting isLoaded to true');
+      setIsLoaded(true);  // Simulate a delay for animation
+    }, 2000);  // Adjust this delay to simulate loading time
   }, []);
+
+  useEffect(() => {
+    if (isLoaded) {
+      console.log('Profile pic has been loaded');
+    }
+  }, [isLoaded]);
 
   return (
     <div className="logo-container" ref={bgRef}>
+      {/* Check if the image is loaded */}
       <img
         className={`profile-pic ${isLoaded ? 'fadeIn' : ''}`}  // Apply fade-in class when loaded
         ref={profilePicRef}  // Attach the ref to the profile pic
         src={ProfilePic}
         alt="Profile"
+        onLoad={() => console.log('Image Loaded')}  // Add onLoad to log when the image is loaded
+        onError={(error) => console.log('Image Load Error', error)}  // Log any errors
       />
 
       <svg

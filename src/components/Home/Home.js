@@ -8,7 +8,7 @@ import './Home.scss'
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate')
 
-  const nameArray = ['D', 'a', ' n']
+  const nameArray = ['D', 'a','n']
 
 
   useEffect(() => {

@@ -13,18 +13,21 @@
 
 .text-zone {
   flex: 1;
-  width: 50vw; /* Increased the width of the text zone */
+  width: 50vw;
   max-width: unset;
   margin-right: 5px;
+  padding-top: 20px; /* Added padding to move the text down */
 }
 
 .profile {
   flex: 1;
   width: 20vw;
   height: auto;
-  margin-left: 20px; /* Reduced margin to move it closer */
+  margin-left: 20px;
   display: flex;
+  padding-top: 20px; /* Added padding to move the profile down */
 }
+
 
 .profile-img {
   width: 200px;
@@ -32,6 +35,7 @@
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+  margin-top: -60px; /* Moves the profile image up */
 }
 
 .skills-section,
@@ -51,8 +55,8 @@
 }
 
 .skills-category h3 {
-  font-size: 1.8rem;
-  margin-bottom: 15px;
+  font-size: 1.5rem; /* Reduced font size for the category headers */
+  margin-bottom: 10px; /* Reduced margin */
   color: #1a73e8;
 }
 
@@ -66,21 +70,14 @@
 }
 
 .skills-section li {
-  font-size: 1.2rem;
+  font-size: 1rem; /* Reduced font size for list items */
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 8px; /* Reduced gap */
   color: #555;
-  flex-basis: 45%;
+  flex-basis: 48%; /* Adjusted width for better fitting */
   box-sizing: border-box;
-}
-
-.skills-section li .fa {
-  font-size: 1.5rem;
-}
-
-.skills-section li {
-  padding: 8px;
+  padding: 6px; /* Reduced padding */
   background-color: #f5f5f5;
   border-radius: 8px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -102,8 +99,8 @@
 }
 
 .interests-section h2 {
-  font-size: 2.5rem;
-  margin-bottom: 20px;
+  font-size: 2.5rem; /* Increased the font size */
+  margin-bottom: 20px; /* Adjusted margin */
   color: #1a73e8;
   font-weight: bold;
 }
@@ -113,11 +110,18 @@
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  gap: 15px;
+  gap: 12px; /* Adjusted gap */
 }
 
 .interests-section li {
-  font-size: 1.2rem;
+  font-size: 1.2rem; /* Increased font size */
+  color: #555; /* Adjusted color for better visibility */
+}
+
+.text-zone p {
+  font-size: 1.2rem; /* Increased font size for paragraphs */
+  line-height: 1.6; /* Adjusted line height for readability */
+  color: #333; /* Darker color for better contrast */
 }
 
 @media screen and (max-width: 1200px) {

@@ -15,9 +15,35 @@
 }
 
 img.profile-pic {
-  width: 140%;   
-  height: auto;  
-  object-fit: cover; 
-  border-radius: 100px;  
-  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);  
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 100px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.25);
 }
+
+.fadeIn {
+  opacity: 1;
+  transition: opacity 1s ease-in-out;
+}
+
+.profile-pic { /* Temporary border for debugging */
+  width: 100px;  /* Adjust size if needed */
+  height: 100px;  /* Adjust size if needed */
+}
+
+
+.drawLogo {
+  animation: drawLogoAnimation 2s ease-out;
+}
+
+@keyframes drawLogoAnimation {
+  0% {
+    stroke-dashoffset: 100%;
+  }
+  100% {
+    stroke-dashoffset: 0;
+  }
+}
+
+
