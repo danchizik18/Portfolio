@@ -35,7 +35,8 @@
   border-radius: 50%;
   object-fit: cover;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  margin-top: -60px; /* Moves the profile image up */
+  margin-top: -80px; /* Moves the profile image up */
+  margin-left: 80px;
 }
 
 .skills-section,
@@ -96,6 +97,7 @@
   right: 5%;
   width: 25vw;
   z-index: 5;
+  margin-top: -70px;
 }
 
 .interests-section h2 {

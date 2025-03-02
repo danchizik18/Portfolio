@@ -52,8 +52,8 @@ const About = () => {
           <div className="skills-category">
             <h3>Programming</h3>
             <ul>
-              <li><FontAwesomeIcon icon={faJava} /> Java</li>
               <li><FontAwesomeIcon icon={faPython} /> Python</li>
+              <li><FontAwesomeIcon icon={faJava} /> Java</li>
               <li><FontAwesomeIcon icon={faJsSquare} /> JavaScript</li>
               <li><FontAwesomeIcon icon={faReact} /> React</li>
             </ul>
@@ -86,12 +86,12 @@ const About = () => {
         <div className="interests-section">
           <h2>Interests</h2>
           <ul>
-            <li>🏆 Poker</li>
-            <li>📈 Economics</li>
-            <li>📜 Public Policy</li>
-            <li>🏀 Sports</li>
-            <li>♟ Chess</li>
-            <li>📖 History</li>
+              <li>📜 Public Policy</li>
+              <li>📈 Economics</li>
+              <li>🏀 Sports</li>
+              <li>♟ Chess</li>
+              <li>📖 History</li>
+              <li>🏆 Poker</li>
           </ul>
         </div>
       </div>
