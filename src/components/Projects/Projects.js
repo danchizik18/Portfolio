@@ -16,7 +16,7 @@ import predictions from '../../assets/images/projects/predictions.png';
 import kmeans from '../../assets/images/projects/kmeans.png';
 import kde from '../../assets/images/projects/kde.png';
 import eyes from '../../assets/images/projects/eyes.jpeg';
-import loss from '../../assets/images/projects/loss.png';
+import moreData from '../../assets/images/projects/moreData.png';
 
 const projects = [
   {
@@ -30,7 +30,7 @@ const projects = [
     title: 'Which president said that?',
     description: 'Web scraped and cleaned presidential documents using regex and TfidfVectorizer. Trained models like Logistic Regression and MultinomialNB with Scikit-learn and Transformers to predict the author of each document. ',
     image: WashingtonImage, 
-    projectImage: loss, 
+    projectImage: moreData, 
     link: 'https://github.com/danchizik18/Presidential-Chatbot/tree/main',
   },
   {
