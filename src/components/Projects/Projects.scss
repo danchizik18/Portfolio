@@ -81,13 +81,15 @@
     }
 
     .card-back {
-      background-color: #f5f5f5;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      transform: rotateY(180deg); /* Initially rotated so it's hidden */
-      padding: 10px;
-    }
+  background-color: #f5f5f5;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotateY(180deg); /* Initially rotated so it's hidden */
+  padding: 10px;
+  flex-direction: column;  /* Allow vertical arrangement of content */
+  justify-content: space-between; /* Distribute content vertically */
+}
 
     .card-back img {
       max-width: 100%;
@@ -96,11 +98,11 @@
     }
 
     .github-link {
-      margin-top: 15px;
-      color: #ffd700;
-      text-decoration: none;
-      display: inline-block;
-      transition: color 0.3s ease;
+  color: #ffd700;
+  text-decoration: none;
+  display: inline-block;
+  transition: color 0.3s ease;
+  margin-top: 10px;
 
       &:hover {
         color: #00b0ff;

@@ -88,8 +88,12 @@ const Projects = () => {
 
             {/* Back of the card */}
             <div className="card-back">
-              <img src={project.projectImage} alt={`${project.title} project`} />
-            </div>
+  <img src={project.projectImage} alt={`${project.title} project`} />
+  <a href={project.link} target="_blank" rel="noopener noreferrer" className="github-link">
+    <FaGithub size={30} />
+  </a>
+</div>
+
           </div>
         </div>
       ))}
