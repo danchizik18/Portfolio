@@ -1,12 +1,41 @@
 import React from 'react';
 import './Experience.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faFileAlt, faBrain } from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode, faFileAlt, faBrain, faNetworkWired, faDatabase} from '@fortawesome/free-solid-svg-icons';
 
 const Experience = () => {
   return (
     <div className="experience-section">
       <h2>Experience</h2>
+
+        <div className="experience-item">
+        <div className="icon-container">
+          <FontAwesomeIcon icon={faNetworkWired} size="2x" color="#ffd700" />
+        </div>
+        <div className="text-container">
+          <h3>Project Manager @ Novo Nordisk (March 2025 - May 2025)</h3>
+          <ul>
+            <li>Analyzed patient sentiment and behavior using LDA & sentiment analysis on large-scale scraped data.</li>
+            <li>Built a scalable web scraping pipeline using AWS Lambda to extract data from online platforms. </li>
+          </ul>
+        </div>
+      </div>
+
+
+        <div className="experience-item">
+        <div className="icon-container">
+          <FontAwesomeIcon icon={faDatabase} size="2x" color="#ffd700" />
+        </div>
+        <div className="text-container">
+          <h3>Machine Learning Intern @ Applied Materials (September 2024 - May 2025)</h3>
+          <ul>
+            <li>Analyzed patient sentiment and behavior using LDA & sentiment analysis on large-scale scraped data.</li>
+            <li>Built a scalable web scraping pipeline using AWS Lambda to extract data from online platforms. </li>
+          </ul>
+        </div>
+      </div>
+
+
 
       <div className="experience-item">
         <div className="icon-container">
@@ -21,12 +50,14 @@ const Experience = () => {
         </div>
       </div>
 
+    
+
       <div className="experience-item">
         <div className="icon-container">
           <FontAwesomeIcon icon={faBrain} size="2x" color="#ffd700" />
         </div>
         <div className="text-container">
-          <h3>Natural Language Processing Researcher (Jan 2025 - Present)</h3>
+          <h3>Natural Language Processing Researcher (Jan 2025 - May 2025)</h3>
           <ul>
             <li>Conducting NLP analysis on 1,500 legal cases related to Section 230 to extract claims, judicial opinions, and patterns</li>
             <li>Technologies: pandas, spaCy, DocETL</li>
