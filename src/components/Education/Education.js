@@ -22,7 +22,7 @@ const Education = () => {
       <div className="education-history">
         <h3>University of California, Berkeley</h3>
         <p><strong>Triple Major:</strong> Statistics, Data Science, Economics</p>
-        <p><strong>Coursework:</strong> Data Structures, Computer Programs, Multivariable Calculus, Data Science, Linear Algebra, Economics</p>
+        <p><strong>Coursework:</strong> Data Structures, Computer Programs, Probability for Data Science, Optimization Models, Techniques for Data Science, Foundations of Data Science, Linear Algebra,Multivariable Calculus, Economics</p>
         <p><strong>Honors:</strong> A+ in Linear Algebra, Foundations of Data Science, and Economics</p>
         
       </div>
@@ -32,7 +32,7 @@ const Education = () => {
         <div className="club-list">
           <div className="club-item">
             <img src={BDAB} alt="Big Data at Berkeley" className="club-logo" />
-            <p>Project Manager, Big Data at Berkeley</p>
+            <p>Vice President of Consulting, Big Data at Berkeley</p>
           </div>
           <div className="club-item">
             <img src={BEA} alt="Behavioral Economics Association" className="club-logo" />
@@ -40,7 +40,7 @@ const Education = () => {
           </div>
           <div className="club-item">
             <img src={SAGB} alt="Sports Analytics Group at Berkeley" className="club-logo" />
-            <p>Projects Member, Sports Analytics Group at Berkeley</p>
+            <p>Head of Projects, Sports Analytics Group at Berkeley</p>
           </div>
         </div>
       </div>

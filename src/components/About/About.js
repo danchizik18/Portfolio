@@ -29,13 +29,13 @@ const About = () => {
             />
           </h1>
             <p>
-              I'm passionate about the intersection of data science, machine learning, and AI, and how we can use these fields to better understand the economy, learn from history, and shape public policy.
+              I'm passionate about data science, machine learning, and AI, and how we can use these fields to better understand the economy, learn from history, and shape public policy.
             </p>
             <p align="LEFT">
-                Extremely curious and always eager to learn. I love collaborating with others because I believe that diverse opinions are not only the best way to grow individually, but also the best way to grow as a community towards tackling real-world challenges.
+                I absolutely LOVE collaborating with others. I've found that simply talking to diverse groups of people has been the most effective way for me to learn new skills.
             </p>
             <p>
-                Above all, I'm passionate about the journey of exploration. By diving into new challenges (and inevitably stumbling along the way), I learn the most and grow into the best version of myself.
+                Above all, I'm passionate about the journey of exploration. I've messed up more times than I can count, but by constantly diving into the deep end with new challenges, I truly believe I become the best version of myself.
             </p>
 
         </div>

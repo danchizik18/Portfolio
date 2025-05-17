@@ -5,7 +5,6 @@ import './Projects.scss';
 import sfusdImage from '../../assets/images/projects/sfusd.png';
 import pokerImage from '../../assets/images/projects/poker.png';
 import nbaImage from '../../assets/images/projects/nba.png';
-import newsImage from '../../assets/images/projects/news.png';
 import lukaImage from '../../assets/images/projects/luka.png';
 import sleepyImage from '../../assets/images/projects/tired.png';
 import WashingtonImage from '../../assets/images/projects/washington.png';
@@ -13,61 +12,65 @@ import WashingtonImage from '../../assets/images/projects/washington.png';
 import datathon from '../../assets/images/projects/datathon.jpeg';
 import play from '../../assets/images/projects/play.png';
 import predictions from '../../assets/images/projects/predictions.png';
-import kmeans from '../../assets/images/projects/kmeans.png';
 import kde from '../../assets/images/projects/kde.png';
 import eyes from '../../assets/images/projects/eyes.jpeg';
 import moreData from '../../assets/images/projects/moreData.png';
+import headshot from '../../assets/images/headshot_arms_crossed-removebg-preview.png';
+import casual from '../../assets/images/causal.jpg';
+import marchMadness from '../../assets/images/march_madness.png';
+import laettner from '../../assets/images/projects/laettner.jpg'
 
 const projects = [
   {
     title: 'SFUSD Student Assignment Process Redesign',
-    description: 'Won 1st place at Cal\'s 6th Annual Datathon 2024! Used Geopandas and Linear Optimization to redesign SFUSD\'s student assignment process for racial diversity and comparable income distributions',
+    description: 'Won 1st place at Cal\'s 6th Annual Datathon 2024! Used Geopandas and Linear Optimization to redesign SFUSD\'s student assignment process.',
     image: sfusdImage, 
     projectImage: datathon, 
     link: 'https://github.com/danchizik18/Datathon-2024',
   },
   {
-    title: 'Which president said that?',
-    description: 'Web scraped and cleaned presidential documents using regex and TfidfVectorizer. Trained models like Logistic Regression and MultinomialNB with Scikit-learn and Transformers to predict the author of each document. ',
+    title: 'March Madness Bracket Predictor',
+    description: 'Built a 2025 March Madness Bracket Predictor using XGBoost. Came within 0.026 of 1st place out of >1500 teams!',
+    image: laettner, 
+    projectImage: marchMadness, 
+    link: 'https://github.com/danchizik18/March-Madness-Predictor',
+  },
+    {
+    title: 'This Portfolio!',
+    description: 'Built this portfolio entirely from scratch using React.',
+    image: headshot, 
+    projectImage: casual, 
+    link: 'https://github.com/danchizik18/Portfolio',
+  },
+  {
+    title: 'Poker Simulator',
+    description: 'Created a poker simulator using Java and Monte Carlo simulations.',
+    image: pokerImage, 
+    projectImage: play, 
+    link: 'https://github.com/danchizik18/Poker-Simulator',
+  },
+   {
+    title: 'Which President Said That?',
+    description: 'Used regex, TfidfVectorizer, and Tensorflow to predict which president authored a given document.',
     image: WashingtonImage, 
     projectImage: moreData, 
     link: 'https://github.com/danchizik18/Presidential-Chatbot/tree/main',
   },
   {
-    title: 'Poker Simulator',
-    description: 'Created a poker simulator based on user-inputted scenarios using Java and Monte Carlo simulations.',
-    image: pokerImage, 
-    projectImage: play, 
-    link: 'https://github.com/danchizik18/Poker-Simulator',
-  },
-  {
-    title: 'NBA Playoff Predictor',
-    description: 'Predicted the 2025 NBA playoffs using pandas, a Random Forest algorithm, and sentiment analysis by web scraping online opinion.',
-    image: nbaImage, 
-    projectImage: predictions, 
-    link: 'https://github.com/danchizik18/NBA-playoff-predictor',
-  },
-  {
-    title: 'News Bias Detector',
-    description: 'Used spaCy, Scikit-learn, and Matplotlib to detect bias in news articles.',
-    image: newsImage, 
-    projectImage: kmeans, 
-    link: 'https://github.com/danchizik18/News-Bias-Detector',
-  },
-  {
     title: 'Luka-AD Trade Analysis',
-    description: 'Applied KMeans clustering to analyze the Anthony Davis-Luka Dončić trade by comparing it to similar NBA trades in the past.',
+    description: 'Analyzed the Anthony Davis-Luka Dončić trade using KMeans clustering.',
     image: lukaImage, 
     projectImage: kde, 
     link: 'https://github.com/danchizik18/Luka-AD-Trade-Analysis',
   },
   {
     title: 'Sleepy Driver Detector',
-    description: "Tracking eye movement and yawning using CV2 and dlib to detect drowsy drivers. Currently enhancing the system to trigger an alert sound upon detection and exploring deployment across car brands.",
+    description: 'Detects drowsy drivers using CV2 and dlib for eye movement tracking.',
     image: sleepyImage, 
     projectImage: eyes, 
     link: 'https://github.com/danchizik18/Sleepy-Driver-Detection',
-  }
+  },
+
 ];
 
 const Projects = () => {
@@ -88,12 +91,11 @@ const Projects = () => {
 
             {/* Back of the card */}
             <div className="card-back">
-  <img src={project.projectImage} alt={`${project.title} project`} />
-  <a href={project.link} target="_blank" rel="noopener noreferrer" className="github-link">
-    <FaGithub size={30} />
-  </a>
-</div>
-
+              <img src={project.projectImage} alt={`${project.title} project`} />
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="github-link">
+                <FaGithub size={30} />
+              </a>
+            </div>
           </div>
         </div>
       ))}

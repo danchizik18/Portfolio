@@ -1,21 +1,22 @@
-import { useEffect, useState } from 'react'
-import { Link } from 'react-router-dom'
+import { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import Loader from 'react-loaders';
-import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';  // Correct path to the file
-import Logo from './Logo/Logo'
-import './Home.scss'
+import AnimatedLetters from '../AnimatedLetters/AnimatedLetters';
+import Logo from './Logo/Logo';
+import './Home.scss';
 
 const Home = () => {
-  const [letterClass, setLetterClass] = useState('text-animate')
+  const [letterClass, setLetterClass] = useState('text-animate');
 
-  const nameArray = ['D', 'a','n']
-
+  const nameArray = ['D', 'a', 'n', ' ', 'C', 'h', 'i', 'z', 'i', 'k'];
 
   useEffect(() => {
-    setTimeout(() => {
-      setLetterClass('text-animate-hover')
-    }, 4000)
-  }, [])
+    const timeoutId = setTimeout(() => {
+      setLetterClass('text-animate-hover');
+    }, 4000);
+
+    return () => clearTimeout(timeoutId);
+  }, []);
 
   return (
     <>
@@ -26,30 +27,24 @@ const Home = () => {
             <span className={`${letterClass} _12`}>e</span>
             <span className={`${letterClass} _12`}>y,</span>
             <br />
-            <span className={`${letterClass} _13`}>i</span>
-            <span className={`${letterClass} _14`}>t'</span>
-            <span className={`${letterClass} _14`}>s</span>
-            <span className={`${letterClass} _15`}>{'\u00A0'}</span>
-            
-            <AnimatedLetters
-              letterClass={letterClass}
-              strArray={nameArray}
-              idx={15}
-            />
-            <span className={`${letterClass} _16`}>! </span>
+            <span className={`${letterClass} _13`}>I</span>
+            <span className={`${letterClass} _14`}>'m </span>
+            <AnimatedLetters letterClass={letterClass} strArray={nameArray} idx={15} />
             <br />
           </h1>
-          <h2>Using Data Science to solve real-world problems</h2>
+          <h2 className="subheading">Data Scientist | Machine Learning Enthusiast | Full-Stack Developer</h2>
           <Link to="/contact" className="flat-button">
             CONTACT ME
           </Link>
         </div>
-        <Logo />
+        <div className="logo-container">
+          <Logo />
+        </div>
       </div>
 
       <Loader type="pacman" />
     </>
-  )
+  );
 }
 
-export default Home
+export default Home;

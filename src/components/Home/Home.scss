@@ -6,15 +6,17 @@
     transform: translateY(-50%);
     width: 40%;
     max-height: 90%;
+    color: #fff;
+    font-family: 'Coolvetica', sans-serif;
   }
 
   h1 {
-    color: #fff;
+    color: #ffd700;
     font-size: 56px;
-    line-height: 53px;
+    line-height: 60px;
     margin: 0;
-    font-family: 'Coolvetica';
     font-weight: 400;
+    position: relative;
 
     &:before {
       content: '<h1>';
@@ -22,7 +24,7 @@
       color: #ffd700;
       font-size: 18px;
       position: absolute;
-      margin-top: -40px;
+      top: -40px;
       left: -15px;
       opacity: 0.6;
     }
@@ -33,14 +35,20 @@
       color: #ffd700;
       font-size: 18px;
       position: absolute;
-      margin-top: 18px;
+      margin-top: 10px;
       margin-left: 20px;
       animation: fadeIn 1s 1.7s backwards;
       opacity: 0.6;
     }
 
+    .animated-letters {
+      display: inline-block;
+      opacity: 0;
+      animation: fadeIn 1.5s forwards;
+    }
+
     img {
-      margin-left: 20px;
+      margin-left: 30px;
       opacity: 0;
       width: 32px;
       height: auto;
@@ -53,35 +61,82 @@
     color: #8d8d8d;
     margin-top: 20px;
     font-weight: 400;
-    font-size: 11px;
-    font-family: sans-serif;
-    letter-spacing: 3px;
+    font-size: 14px;
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 2px;
     animation: fadeIn 1s 1.8s backwards;
   }
 
   .flat-button {
     color: black;
-    font-size: 13px;
-    font-weight: 400;
-    letter-spacing: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 3px;
     font-family: sans-serif;
     text-decoration: none;
-    padding: 10px 18px;
-    border: 1px solid black;
+    padding: 12px 20px;
+    border: 2px solid #ffd700;
     margin-top: 25px;
     float: left;
     animation: fadeInAnimation 1s 1.8s backwards;
     white-space: nowrap;
+    transition: background 0.3s, color 0.3s, box-shadow 0.3s;
 
     &:hover {
       background: #ffd700;
-      color: #333;
+      color: #1a1a1a;
+      box-shadow: 0 0 15px #ffd700;
     }
+  }
+
+  /* Image of You Positioned to the Right */
+  .image-container {
+    position: absolute;
+    right: 10%;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 35%;
+    max-height: 90%;
+  }
+
+  .image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+
+  .image-container img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
   }
 }
 
+/* Animation Keyframes */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 
+@keyframes rotateIn {
+  0% {
+    transform: rotate(-180deg);
+    opacity: 0;
+  }
+  100% {
+    transform: rotate(0);
+    opacity: 1;
+  }
+}
 
+/* Mobile Optimization */
 @media screen and (max-width: 1200px) {
   .tags,
   .home-page h1:before,
@@ -91,36 +146,47 @@
 
   .home-page .text-zone {
     position: initial;
-    width: 100%;
+    width: 90%;
     transform: none;
-    padding: 10px;
+    padding: 20px;
     box-sizing: border-box;
+  }
+
+  .home-page h1 {
+    font-size: 42px;
+    line-height: 48px;
+  }
+
+  .home-page h2 {
+    font-size: 12px;
   }
 
   .home-page .flat-button {
     float: none;
     display: block;
-    margin: 20px auto 0 auto;
-    width: 124px;
+    margin: 20px auto 0;
+    width: auto;
   }
 
   .logo-container {
     position: relative;
-    width: 100px;
+    width: 80px;
     height: auto;
-    top: 50px;
+    top: 30px;
     right: 0;
     box-sizing: border-box;
     margin: auto;
     left: 0;
   }
 
-  .logo-container svg {
-    position: absolute;
-    top: auto;
-    right: auto;
-    bottom: auto;
-    left: 0;
-    margin: auto;
+  .image-container {
+    position: static;
+    width: 60%;
+    margin: 20px auto;
+    text-align: center;
+  }
+
+  .image-container img {
+    width: 100%;
   }
 }
