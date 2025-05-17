@@ -4,14 +4,12 @@ import './Projects.scss';
 
 import sfusdImage from '../../assets/images/projects/sfusd.png';
 import pokerImage from '../../assets/images/projects/poker.png';
-import nbaImage from '../../assets/images/projects/nba.png';
 import lukaImage from '../../assets/images/projects/luka.png';
 import sleepyImage from '../../assets/images/projects/tired.png';
 import WashingtonImage from '../../assets/images/projects/washington.png';
 
 import datathon from '../../assets/images/projects/datathon.jpeg';
 import play from '../../assets/images/projects/play.png';
-import predictions from '../../assets/images/projects/predictions.png';
 import kde from '../../assets/images/projects/kde.png';
 import eyes from '../../assets/images/projects/eyes.jpeg';
 import moreData from '../../assets/images/projects/moreData.png';
