@@ -8,7 +8,7 @@ import './Home.scss';
 const Home = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
 
-  const nameArray = ['D', 'a', 'n', ' ', 'C', 'h', 'i', 'z', 'i', 'k'];
+  const nameArray = ['D', 'a', 'n', ' ', 'C', 'h', 'i', 'z', 'i', 'k', '!'];
 
   useEffect(() => {
     const timeoutId = setTimeout(() => {

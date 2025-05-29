@@ -21,22 +21,6 @@ const Experience = () => {
         </div>
       </div>
 
-
-        <div className="experience-item">
-        <div className="icon-container">
-          <FontAwesomeIcon icon={faDatabase} size="2x" color="#ffd700" />
-        </div>
-        <div className="text-container">
-          <h3>Machine Learning Intern @ Applied Materials (September 2024 - May 2025)</h3>
-          <ul>
-            <li>Analyzed patient sentiment and behavior using LDA & sentiment analysis on large-scale scraped data.</li>
-            <li>Built a scalable web scraping pipeline using AWS Lambda to extract data from online platforms. </li>
-          </ul>
-        </div>
-      </div>
-
-
-
       <div className="experience-item">
         <div className="icon-container">
           <FontAwesomeIcon icon={faLaptopCode} size="2x" color="#ffd700" />
