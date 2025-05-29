@@ -1,7 +1,7 @@
 import React from 'react';
 import './Experience.scss';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faLaptopCode, faFileAlt, faBrain, faNetworkWired, faDatabase} from '@fortawesome/free-solid-svg-icons';
+import { faLaptopCode, faFileAlt, faBrain, faNetworkWired } from '@fortawesome/free-solid-svg-icons';
 
 const Experience = () => {
   return (
