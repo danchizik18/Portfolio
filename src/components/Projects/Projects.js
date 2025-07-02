@@ -17,8 +17,27 @@ import headshot from '../../assets/images/headshot_arms_crossed-removebg-preview
 import casual from '../../assets/images/causal.jpg';
 import marchMadness from '../../assets/images/march_madness.png';
 import laettner from '../../assets/images/projects/laettner.jpg'
+import airspace from '../../assets/images/projects/airspace.png'
+import airspaceDiagram from '../../assets/images/projects/airspace_diagram.jpg'
+import rfDiagram from '../../assets/images/projects/rf_diagram.jpg'
+import rf from '../../assets/images/projects/rf.png'
 
 const projects = [
+  {
+  title: 'Real-Time Aircraft Intrusion Detection',
+  description: 'Built an airspace intrusion dashboard with OpenSky API, geofencing, and ML risk classification.',
+  image: airspaceDiagram,  // Replace with appropriate airspace image if available
+  projectImage: airspace,
+  link: 'https://github.com/danchizik18/Airspace-Intrusion-Detector'  // Replace if repo exists elsewhere
+},
+{
+  title: 'RF Signal Modulation Classifier',
+  description: 'Built a CNN classifier and dashboard to identify RF signal types using synthetic I/Q telemetry.',
+  image: rfDiagram,  // Replace with appropriate RF image if available
+  projectImage: rf,
+  link: 'https://github.com/danchizik18/RF-Authenticator'  // Replace if repo exists elsewhere
+}
+,
   {
     title: 'SFUSD Student Assignment Process Redesign',
     description: 'Won 1st place at Cal\'s 6th Annual Datathon 2024! Used Geopandas and Linear Optimization to redesign SFUSD\'s student assignment process.',

@@ -8,15 +8,27 @@ const Experience = () => {
     <div className="experience-section">
       <h2>Experience</h2>
 
-        <div className="experience-item">
+      <div className="experience-item">
+        <div className="icon-container">
+          <FontAwesomeIcon icon={faBrain} size="2x" color="#ffd700" />
+        </div>
+        <div className="text-container">
+          <h3>ML/AI Intern @ SkillsVest (June 2025 – Present)</h3>
+          <ul>
+            <li>Building an AI-driven Bayesian Belief Network model to predict student loan default risk.</li>
+          </ul>
+        </div>
+      </div>
+
+      <div className="experience-item">
         <div className="icon-container">
           <FontAwesomeIcon icon={faNetworkWired} size="2x" color="#ffd700" />
         </div>
         <div className="text-container">
-          <h3>Project Manager @ Novo Nordisk (March 2025 - May 2025)</h3>
+          <h3>Technical Project Manager @ Novo Nordisk (Mar – May 2025)</h3>
           <ul>
-            <li>Analyzed patient sentiment and behavior using LDA & sentiment analysis on large-scale scraped data.</li>
-            <li>Built a scalable web scraping pipeline using AWS Lambda to extract data from online platforms. </li>
+            <li>Analyzed 12,000+ patient posts using LDA & sentiment analysis to uncover behavioral trends.</li>
+            <li>Built a scalable scraping pipeline across 10+ platforms, improving data efficiency by 70%.</li>
           </ul>
         </div>
       </div>
@@ -26,26 +38,22 @@ const Experience = () => {
           <FontAwesomeIcon icon={faLaptopCode} size="2x" color="#ffd700" />
         </div>
         <div className="text-container">
-          <h3>Software Engineer Intern @ Nidus Technologies (August 2024 - December 2024)</h3>
+          <h3>Software Engineer Intern @ Nidus Technologies (Aug – Dec 2024)</h3>
           <ul>
-            <li>Developed a full-stack web application featuring an AI chatbot, booking system, client database, search functionality, and user authentication</li>
-            <li>Technologies: React, Google Firebase, LLM integration, MongoDB, AWS, SQL</li>
+            <li>Built a full-stack web app with AI chatbot, booking system, and search functionality.</li>
+            <li>Used React, Firebase, AWS, and SQL to support 500+ queries and 100+ bookings.</li>
           </ul>
         </div>
       </div>
 
-    
-
       <div className="experience-item">
         <div className="icon-container">
-          <FontAwesomeIcon icon={faBrain} size="2x" color="#ffd700" />
+          <FontAwesomeIcon icon={faFileAlt} size="2x" color="#ffd700" />
         </div>
         <div className="text-container">
-          <h3>Natural Language Processing Researcher (Jan 2025 - May 2025)</h3>
+          <h3>NLP Researcher @ UC Berkeley iSchool (Jan – May 2025)</h3>
           <ul>
-            <li>Conducting NLP analysis on 1,500 legal cases related to Section 230 to extract claims, judicial opinions, and patterns</li>
-            <li>Technologies: pandas, spaCy, DocETL</li>
-            <li>Building pipelines to generate insights on platform liability, free speech, and internet regulation</li>
+            <li>Extracted claims, sentiment, and entities from 1,500 Section 230 cases using Pandas and spaCy.</li>
           </ul>
         </div>
       </div>
@@ -57,9 +65,8 @@ const Experience = () => {
         <div className="text-container">
           <h3>Machine Learning Intern (Summer 2022)</h3>
           <ul>
-            <li>Enhanced a machine learning platform for classifying corporate exchanges by objectivity</li>
-            <li>Collaborated with Wharton and CMU professors Shimon Kogan and Vitaly Meursault</li>
-            <li>Utilized sentiment analysis, data mining, convolutional neural networks, and statistical analysis</li>
+            <li>Built sentiment CNN with Wharton & CMU, boosting accuracy on 180K+ filings.</li>
+            <li>Project: <em>Corporate Disclosure: Facts or Opinions?</em></li>
           </ul>
         </div>
       </div>
