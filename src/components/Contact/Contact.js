@@ -7,6 +7,21 @@ import './Contact.scss';
 
 // Make sure to import Leaflet CSS
 import 'leaflet/dist/leaflet.css';
+import L from 'leaflet';
+import icon from 'leaflet/dist/images/marker-icon.png';
+import iconShadow from 'leaflet/dist/images/marker-shadow.png';
+
+// Fix for default marker icon in react-leaflet
+let DefaultIcon = L.icon({
+  iconUrl: icon,
+  shadowUrl: iconShadow,
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
+});
+
+L.Marker.prototype.options.icon = DefaultIcon;
 
 const Contact = () => {
   const [letterClass, setLetterClass] = useState('text-animate');
@@ -53,7 +68,7 @@ const Contact = () => {
             />
           </h1>
           <p>
-            Hi there! I'm passionate about using data science, statistics, and AI to solve real-world problems, particularly dealing with economics and public policy! I'm always looking for new challenges and opportunities to collaborate so whether you're looking to discuss a project, share ideas, or simply connect, feel free to reach out. I'd love to hear from you!
+            Hey y'all! I'm a CS + DS major at UC Berkeley with a passion for AI, ML, and Data Engineering in defense, sports, and in general innovative tech. Feel free to reach out, I'd love to hear from you!
           </p>
           <div className="contact-form">
             <form ref={form} onSubmit={sendEmail}>

@@ -23,22 +23,46 @@ const Sidebar = () => {
   return (
     <div className="nav-bar">
       <nav className={showNav ? 'mobile-show' : ''}>
-        <NavLink exact="true" activeclassname="active" to="/" onClick={() => setShowNav(false)}>
+        <NavLink 
+          to="/" 
+          className={({ isActive }) => isActive ? "active" : ""}
+          onClick={() => setShowNav(false)}
+        >
           <FontAwesomeIcon icon={faHome} color="#4d4d4e" />
         </NavLink>
-        <NavLink activeclassname="active" className="about-link" to="/about" onClick={() => setShowNav(false)}>
+        <NavLink 
+          to="/about" 
+          className={({ isActive }) => isActive ? "active about-link" : "about-link"}
+          onClick={() => setShowNav(false)}
+        >
           <FontAwesomeIcon icon={faUser} color="#4d4d4e" />
         </NavLink>
-        <NavLink activeclassname="active" className="education-link" to="/education" onClick={() => setShowNav(false)}>
+        <NavLink 
+          to="/education" 
+          className={({ isActive }) => isActive ? "active education-link" : "education-link"}
+          onClick={() => setShowNav(false)}
+        >
           <FontAwesomeIcon icon={faGraduationCap} color="#4d4d4e" />
         </NavLink>
-        <NavLink activeclassname="active" className="projects-link" to="/projects" onClick={() => setShowNav(false)}>
+        <NavLink 
+          to="/projects" 
+          className={({ isActive }) => isActive ? "active projects-link" : "projects-link"}
+          onClick={() => setShowNav(false)}
+        >
           <FontAwesomeIcon icon={faSuitcase} color="#4d4d4e" />
         </NavLink>
-        <NavLink activeclassname="active" className="experience-link" to="/experience" onClick={() => setShowNav(false)}>
+        <NavLink 
+          to="/experience" 
+          className={({ isActive }) => isActive ? "active experience-link" : "experience-link"}
+          onClick={() => setShowNav(false)}
+        >
           <FontAwesomeIcon icon={faLaptopCode} color="#4d4d4e" />
         </NavLink>
-        <NavLink activeclassname="active" className="contact-link" to="/contact" onClick={() => setShowNav(false)}>
+        <NavLink 
+          to="/contact" 
+          className={({ isActive }) => isActive ? "active contact-link" : "contact-link"}
+          onClick={() => setShowNav(false)}
+        >
           <FontAwesomeIcon icon={faEnvelope} color="#4d4d4e" />
         </NavLink>
         <FontAwesomeIcon onClick={() => setShowNav(false)} icon={faClose} color="#ffd700" size="3x" className="close-icon" />
