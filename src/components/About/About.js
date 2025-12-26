@@ -63,7 +63,6 @@ const About = () => {
             <h3>Programming & Systems</h3>
             <ul>
               <li><FontAwesomeIcon icon={faPython} /> Python</li>
-              <li><FontAwesomeIcon icon={faCode} /> C</li>
               <li><FontAwesomeIcon icon={faCode} /> C++</li>
               <li><FontAwesomeIcon icon={faJsSquare} /> TypeScript</li>
               <li><FontAwesomeIcon icon={faReact} /> React</li>
@@ -85,9 +84,7 @@ const About = () => {
               <li><FontAwesomeIcon icon={faServer} /> Kafka</li>
               <li><FontAwesomeIcon icon={faPython} /> Pandas</li>
               <li><FontAwesomeIcon icon={faGitAlt} /> scikit-learn</li>
-              <li><FontAwesomeIcon icon={faPython} /> TensorFlow</li>
               <li><FontAwesomeIcon icon={faPython} /> PyTorch</li>
-              <li><FontAwesomeIcon icon={faPython} /> XGBoost</li>
               <li><FontAwesomeIcon icon={faServer} /> Airflow</li>
               <li><FontAwesomeIcon icon={faServer} /> Braintrust</li>
             </ul>
@@ -101,7 +98,6 @@ const About = () => {
               <li><FontAwesomeIcon icon={faServer} /> Neuron SDK</li>
               <li><FontAwesomeIcon icon={faDatabase} /> MongoDB</li>
               <li><FontAwesomeIcon icon={faDatabase} /> ClickHouse</li>
-              <li><FontAwesomeIcon icon={faCloud} /> Datadog</li>
             </ul>
           </div>
         </div>

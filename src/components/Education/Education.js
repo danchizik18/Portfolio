@@ -21,9 +21,9 @@ const Education = () => {
 
       <div className="education-history">
         <h3>University of California, Berkeley</h3>
-        <p><strong>Triple Major:</strong> Statistics, Data Science, Economics</p>
-        <p><strong>Coursework:</strong> Data Structures, Computer Programs, Probability for Data Science, Optimization Models, Techniques for Data Science, Foundations of Data Science, Linear Algebra,Multivariable Calculus, Economics</p>
-        <p><strong>Honors:</strong> A+ in Linear Algebra, Foundations of Data Science, and Economics</p>
+        <p><strong>Dual Degree:</strong> Computer Science & Data Science</p>
+        <p><strong>Coursework:</strong> Data Structures, Computer Programs & Algorithms, Machine Learning, Networks, Efficient Algorithms & Intractable Problems, Techniques of Data Science, Principles of Data Science, Probability for Data Science, Linear Algebra, Multivariable Calculus, Discrete Math
+        </p>
         
       </div>
 
@@ -32,7 +32,7 @@ const Education = () => {
         <div className="club-list">
           <div className="club-item">
             <img src={BDAB} alt="Big Data at Berkeley" className="club-logo" />
-            <p>Vice President of Consulting, Big Data at Berkeley</p>
+            <p>President, Big Data at Berkeley</p>
           </div>
           <div className="club-item">
             <img src={BEA} alt="Behavioral Economics Association" className="club-logo" />
